@@ -1,5 +1,5 @@
 # blueprintpower
-Take-home challenge for the modeling engineer interview
+Take-home challenge for the modeling engineer role
 
 ## Run app
 To run the app, install all modules per requirements.txt.
