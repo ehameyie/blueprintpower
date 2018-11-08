@@ -156,10 +156,10 @@ try:
     df_optim =  pd.read_csv(latest_file_optim)
 
     ## Output requested per Requirement doc
-    df_optim['Total revenue generation ($)'] = -1 * df_optim['Power output (kW)'] * df_optim['LBMP ($/MWHr)']
+    df_optim['Total revenue generation ($)'] = -1 * df_optim['Power output (kW)'] * df_optim['LBMP ($/MWHr)']/1000
     df_optim.loc[df_optim['Power output (kW)'] >0 , 'Total revenue generation ($)'] = 0
 
-    df_optim['Total charging cost ($)'] = 1 * df_optim['Power output (kW)'] * df_optim['LBMP ($/MWHr)']
+    df_optim['Total charging cost ($)'] = 1 * df_optim['Power output (kW)'] * df_optim['LBMP ($/MWHr)']/1000
     df_optim.loc[df_optim['Power output (kW)'] <0 , 'Total charging cost ($)'] = 0
     annual_rev = df_optim['Total revenue generation ($)'].sum()
     annual_cost = df_optim['Total charging cost ($)'].sum()
