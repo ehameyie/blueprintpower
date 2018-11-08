@@ -2,16 +2,7 @@
 import dash
 import dash_core_components as dcc
 import dash_html_components as html
-# import dash_table_experiments as dt
 from dash.dependencies import Input, Output, State, Event
-# import colorlover as cl
-# import flask
-# import plotly.graph_objs as go
-# import requests
-# from base64 import b64decode
-# from flask import send_from_directory
-# import numpy as np
-# import plotly.figure_factory as ff
 
 import os, glob, datetime, time
 import pandas as pd
